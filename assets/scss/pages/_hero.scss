@@ -1,0 +1,27 @@
+@use"../variables";
+
+.hero {
+background-image: url('../images/hero-bg.jpg');
+  height: 110vh;
+  background-position: center/center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &::before {
+     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit; 
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1;
+  }
+  .row{
+    align-items: flex-end;
+    .grid-container{
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
