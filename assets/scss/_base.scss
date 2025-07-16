@@ -15,23 +15,22 @@
 }
 
 .row{
-    display: flex; 
-    width: 100%;
+    display: flex;
 }
 
 @media(max-width:1200px){
-    .conatiner{
+    .container{
         width: 85%;
     }
 }
 
 @media(max-width:992px){
-    .conatiner{
-        width: 90%;
+    .container{
+        width: 95%;
     }
 }
 
-@media(max-width:800px) {
+@media(max-width:768px) {
     .container{
         width: 95%;
     }
