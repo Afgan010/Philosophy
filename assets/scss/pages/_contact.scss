@@ -1,0 +1,104 @@
+@use"../variables" as c;
+
+.main{
+    .contact{
+        padding: 40px 0;
+        .container{
+           .row{
+            flex-direction: column;
+            gap: 50px;
+            .section-title{
+                text-align: center;
+                font-size: 40px;
+            }
+            .text-two{
+                color: c.$gray;
+            }
+            .find-us{
+                display: flex;
+                justify-content: space-evenly;
+                .map{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .title{
+                        font-size: 24px;
+                    }
+                    a{
+                        color: c.$gray;
+                        transition: all .4s ease-in-out;
+                        &:hover{
+                            color: c.$secondarycolor;
+                        }
+                    }
+                    .text{
+                        color: c.$gray;
+                    }
+                }
+                .conatct-info{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .title{
+                        font-size: 24px;
+                    }
+                    a{
+                        color: c.$gray;
+                        transition: all .4s ease-in-out;
+                        &:hover{
+                            color: c.$secondarycolor;
+                        } 
+                    }
+                }
+            }
+            .form{
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                .title{
+                    font-size: 40px;
+                }
+                input,textarea{
+                    width: 100%;
+                    padding: 12px 15px;
+                    border: none;
+                    border-bottom: 1px solid #999;
+                    background-color: transparent;
+                    color: c.$gray;
+                    font-size: 15px;
+                    resize: none;
+                    &::placeholder {
+                      color: #aaa;
+                    }
+                
+                    &:focus {
+                      outline: none;
+                      box-shadow: 0 2px 0 c.$gray;
+                    }
+                }
+                 button {
+                       background-color: c.$secondarycolor;
+                       color: c.$purewhite;
+                       letter-spacing: 2px;
+                       padding: 14px;
+                       border: none;
+                       cursor: pointer;
+                       font-size: 14px;
+                       transition: all 0.4s ease;
+                   
+                       &:hover {
+                         background-color: c.$softgreen;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .find-us{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
