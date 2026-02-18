@@ -1,0 +1,295 @@
+@use"../variables" as c;
+
+.main{
+    .popular{
+        padding: 40px 0;
+        .container{
+            .popular-title{
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .row{
+                gap: 40px;
+                .popular-posts{
+                    width: calc(60% - 40px);
+                    display: flex;
+                    gap: 40px;
+                    .left-side{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        .wheel{
+                            display: flex;
+                            gap: 20px;
+                            .img-container{
+                                height: 70px;
+                                width: 70px;
+                                background-image: url("../images/wheel.jpg");
+                                background-position: center center;
+                                background-size: cover;
+                            }
+                            .info{
+                                display: flex;
+                                flex-direction: column;
+                                .title{
+                                    a{
+                                        color: c.$black;
+                                        font-weight: 600;
+                                        transition: all .4s ease-in-out;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                                .author{
+                                    color: c.$gray;
+                                    a{
+                                        color: c.$black;
+                                        transition: all .4s ease-in-out;
+                                        font-size: 14px;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .cookies{
+                            display: flex;
+                            gap: 20px;
+                            .img-container{
+                                height: 70px;
+                                width: 70px;
+                                background-image: url("../images/cookies.jpg");
+                                background-position: center center;
+                                background-size: cover;
+                            }
+                            .info{
+                                display: flex;
+                                flex-direction: column;
+                                .title{
+                                    a{
+                                        color: c.$black;
+                                        font-weight: 600;
+                                        transition: all .4s ease-in-out;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                                .author{
+                                    color: c.$gray;
+                                    a{
+                                        color: c.$black;
+                                        transition: all .4s ease-in-out;
+                                        font-size: 14px;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .tulips{
+                            display: flex;
+                            gap: 20px;
+                            .img-container{
+                                height: 70px;
+                                width: 70px;
+                                background-image: url("../images/tulips.jpg");
+                                background-position: center center;
+                                background-size: cover;
+                            }
+                            .info{
+                                display: flex;
+                                flex-direction: column;
+                                .title{
+                                    a{
+                                        color: c.$black;
+                                        font-weight: 600;
+                                        transition: all .4s ease-in-out;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                                .author{
+                                    color: c.$gray;
+                                    a{
+                                        color: c.$black;
+                                        transition: all .4s ease-in-out;
+                                        font-size: 14px;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .right-side{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        .shutterbug{
+                            display: flex;
+                            gap: 20px;
+                            .img-container{
+                                height: 70px;
+                                width: 70px;
+                                background-image: url("../images/shutterbug.jpg");
+                                background-position: center center;
+                                background-size: cover;
+                            }
+                            .info{
+                                display: flex;
+                                flex-direction: column;
+                                .title{
+                                    a{
+                                        color: c.$black;
+                                        font-weight: 600;
+                                        transition: all .4s ease-in-out;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                                .author{
+                                    color: c.$gray;
+                                    a{
+                                        color: c.$black;
+                                        transition: all .4s ease-in-out;
+                                        font-size: 14px;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .beetle{
+                            display: flex;
+                            gap: 20px;
+                            .img-container{
+                                height: 70px;
+                                width: 70px;
+                                background-image: url("../images/featured-beetle.jpg");
+                                background-position: center center;
+                                background-size: cover;
+                            }
+                            .info{
+                                display: flex;
+                                flex-direction: column;
+                                .title{
+                                    a{
+                                        color: c.$black;
+                                        font-weight: 600;
+                                        transition: all .4s ease-in-out;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                                .author{
+                                    color: c.$gray;
+                                    a{
+                                        color: c.$black;
+                                        transition: all .4s ease-in-out;
+                                        font-size: 14px;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .healthy{
+                            display: flex;
+                            gap: 20px;
+                            .img-container{
+                                height: 70px;
+                                width: 70px;
+                                background-image: url("../images/cookies.jpg");
+                                background-position: center center;
+                                background-size: cover;
+                            }
+                            .info{
+                                display: flex;
+                                flex-direction: column;
+                                .title{
+                                    a{
+                                        color: c.$black;
+                                        font-weight: 600;
+                                        transition: all .4s ease-in-out;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                                .author{
+                                    color: c.$gray;
+                                    a{
+                                        color: c.$black;
+                                        transition: all .4s ease-in-out;
+                                        font-size: 14px;
+                                        &:hover{
+                                            color: c.$secondarycolor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                .popular-about{
+                    width: calc(40% - 40px);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    .text{
+                        color: c.$gray;
+                        text-align: justify;
+                    }
+                    .links{
+                        display: flex;
+                        gap: 30px;
+                        a{
+                            color: c.$black;
+                            transition: all .4s ease-in-out;
+                            font-size: 24px;
+                            &:hover{
+                                color: c.$secondarycolor;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .popular{
+        padding: 20px 0;
+        .container{
+            width: 95%;
+            .row{
+                flex-direction: column;
+                .popular-posts{
+                    flex-direction: column;
+                    width: 100% !important;
+                    align-items: center;
+                    .wheel, .cookies, .tulips, .shutterbug, .beetle, .healthy{
+                        flex-direction: column;
+                    }
+                }
+                .popular-about{
+                    width: 100% !important;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

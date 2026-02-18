@@ -1,0 +1,421 @@
+@use"../variables" as c;
+
+.main{
+    .philosophy{
+        background-color: rgba(128, 128, 128 , 0.5);
+        padding: 70px 0;
+        .container{
+            height: auto;
+            width: 90%;
+            .row{
+                height: auto;
+                gap: 30px;
+                flex-wrap: wrap;
+                .left-side{
+                    width: calc(25% - 22.5px);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    .philosophy-content{
+                        padding: 0 0 30px;
+                        background-color: c.$purewhite;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 22px;
+                        .lamp{
+                        background-image: url("../images/lamp.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                        .guitarman{
+                        background-image: url("../images/guitarman.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                        .sydney{
+                        background-image: url("../images/sydney.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                       .img-container{
+                        height: 300px;
+                        width: 100%;
+                        &::before {
+                         content: '';
+                         position: absolute;
+                         inset: 0;
+                         background-color: rgba(0, 0, 0, 0); 
+                         transition: background-color 0.4s ease;
+                         z-index: 1;
+                        }
+                        &:hover::before {
+                          background-color: rgba(0, 0, 0, 0.5); 
+                        }
+                        > * {
+                          position: relative;
+                          z-index: 2;
+                        }
+                        a{
+                            position: absolute;
+                            inset: 0;
+                            z-index: 3;
+                        }
+                       }
+                       .date{
+                        color: c.$gray;
+                        font-size: 14px;
+                        padding: 0 20px;
+                       }
+                       .title{
+                        font-size: 24px;
+                        padding: 0 20px;
+                        a{
+                          color: c.$black;
+                          border-bottom: 1px solid transparent;
+                          transition: all .4s ease-in-out;  
+                          &:hover{
+                            border-bottom: 1px solid #00000050;
+                          }
+                        }
+                       }
+                       .text{
+                        color: c.$gray;
+                        padding: 0 20px;
+                        font-size: 15px;
+                        line-height: 27px;
+                       }
+                       .links{
+                        padding: 0 20px;
+                        display: flex;
+                        gap: 20px;
+                        a{
+                         color: c.$blue;
+                         transition: all .4s ease-in-out;
+                         &:hover{
+                             color: c.$softgreen;
+                           }
+                        }
+                       }
+                    }
+                }
+                .center-left-side{
+                    width:calc(25% - 22.5px) ;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    .philosophy-content{
+                        padding: 0 0 30px;
+                        background-color: c.$purewhite;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 22px;
+                        .icon{
+                        background-image: url("../images/icon-link.svg");   
+                        background-position: center center;                            
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                        .wheel{
+                        background-image: url("../images/wheel.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                        .jump{
+                        background-image: url("../images/jump.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                       .img-container{
+                        height: 300px;
+                        width: 100%;
+                        &::before {
+                         content: '';
+                         position: absolute;
+                         inset: 0;
+                         background-color: rgba(0, 0, 0, 0); 
+                         transition: background-color 0.4s ease;
+                         z-index: 1;
+                        }
+                        &:hover::before {
+                          background-color: rgba(0, 0, 0, 0.5); 
+                        }
+                        > * {
+                          position: relative;
+                          z-index: 2;
+                        }
+                        a{
+                            position: absolute;
+                            inset: 0;
+                            z-index: 3;
+                        }
+                       }
+                       .date{
+                        color: c.$gray;
+                        font-size: 14px;
+                        padding: 0 20px;
+                       }
+                       .title{
+                        font-size: 24px;
+                        padding: 0 20px;
+                        a{
+                          color: c.$black;
+                          border-bottom: 1px solid transparent;
+                          transition: all .4s ease-in-out;  
+                          &:hover{
+                            border-bottom: 1px solid #00000050;
+                          }
+                        }
+                       }
+                       .text{
+                        color: c.$gray;
+                        padding: 0 20px;
+                        font-size: 15px;
+                        line-height: 27px;
+                       }
+                       .links{
+                        padding: 0 20px;
+                        display: flex;
+                        gap: 20px;
+                        a{
+                         color: c.$blue;
+                         transition: all .4s ease-in-out;
+                         &:hover{
+                             color: c.$softgreen;
+                           }
+                        }
+                       }
+                    }
+                }
+                .center-right-side{
+                    width: calc(25% - 22.5px);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    .philosophy-content{
+                        padding: 0 0 30px;
+                        background-color: c.$purewhite;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 22px;
+                        .tulips{
+                        background-image: url("../images/tulips.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                        .shutterberg{
+                        background-image: url("../images/shutterbug.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                        .beetle{
+                        background-image: url("../images/featured-beetle.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                       .img-container{
+                        height: 250px;
+                        width: 100%;
+                        &::before {
+                         content: '';
+                         position: absolute;
+                         inset: 0;
+                         background-color: rgba(0, 0, 0, 0); 
+                         transition: background-color 0.4s ease;
+                         z-index: 1;
+                        }
+                        &:hover::before {
+                          background-color: rgba(0, 0, 0, 0.5); 
+                        }
+                        > * {
+                          position: relative;
+                          z-index: 2;
+                        }
+                        a{
+                            position: absolute;
+                            inset: 0;
+                            z-index: 3;
+                        }
+                       }
+                       .date{
+                        color: c.$gray;
+                        font-size: 14px;
+                        padding: 0 20px;
+                       }
+                       .title{
+                        font-size: 24px;
+                        padding: 0 20px;
+                        a{
+                          color: c.$black;
+                          border-bottom: 1px solid transparent;
+                          transition: all .4s ease-in-out;  
+                          &:hover{
+                            border-bottom: 1px solid #00000050;
+                          }
+                        }
+                       }
+                       .text{
+                        color: c.$gray;
+                        padding: 0 20px;
+                        font-size: 15px;
+                        line-height: 27px;
+                       }
+                       .links{
+                        padding: 0 20px;
+                        display: flex;
+                        gap: 20px;
+                        a{
+                         color: c.$blue;
+                         transition: all .4s ease-in-out;
+                         &:hover{
+                             color: c.$softgreen;
+                           }
+                        }
+                       }
+                    }
+                } 
+                .right-side{
+                    width: calc(25% - 22.5px);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    .philosophy-content{
+                        padding: 0 0 30px;
+                        background-color: c.$purewhite;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 22px;
+                        .cookies{
+                        background-image: url("../images/cookies.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                        .gallery{
+                        background-image: url("../images/gallery.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                        .fuji{
+                        background-image: url("../images/fuji.jpg");
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+                       .img-container{
+                        height: 250px;
+                        width: 100%;
+                        &::before {
+                         content: '';
+                         position: absolute;
+                         inset: 0;
+                         background-color: rgba(0, 0, 0, 0); 
+                         transition: background-color 0.4s ease;
+                         z-index: 1;
+                        }
+                        &:hover::before {
+                          background-color: rgba(0, 0, 0, 0.5); 
+                        }
+                        > * {
+                          position: relative;
+                          z-index: 2;
+                        }
+                        a{
+                            position: absolute;
+                            inset: 0;
+                            z-index: 3;
+                        }
+                       }
+                       .date{
+                        color: c.$gray;
+                        font-size: 14px;
+                        padding: 0 20px;
+                       }
+                       .title{
+                        font-size: 24px;
+                        padding: 0 20px;
+                        a{
+                          color: c.$black;
+                          border-bottom: 1px solid transparent;
+                          transition: all .4s ease-in-out;  
+                          &:hover{
+                            border-bottom: 1px solid #00000050;
+                          }
+                        }
+                       }
+                       .text{
+                        color: c.$gray;
+                        padding: 0 20px;
+                        font-size: 15px;
+                        line-height: 27px;
+                       }
+                       .links{
+                        padding: 0 20px;
+                        display: flex;
+                        gap: 20px;
+                        a{
+                         color: c.$blue;
+                         transition: all .4s ease-in-out;
+                         &:hover{
+                             color: c.$softgreen;
+                           }
+                        }
+                       }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width:1200px){
+    .container{
+        width: 100%;
+    }
+}
+
+
+  @media (max-width: 991.98px) {
+  .left-side,
+  .center-left-side,
+  .center-right-side,
+  .right-side {
+    flex: 0 0 calc(50% - 15px); 
+    max-width: calc(50% - 15px);
+  }
+
+}
+@media (max-width: 767.98px) {
+    .philosophy{
+        padding: 30px 0 !important;
+          .left-side,
+          .center-left-side,
+          .center-right-side,
+          .right-side {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+

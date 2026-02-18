@@ -1,11 +1,14 @@
 @use"../variables" as c;
 .header{
+    background-color: #151515;
+     body.home & {
     background-color: transparent;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
+  }
     .container{
         .row{
             width: 100%;
@@ -134,6 +137,7 @@
     top: 0;
     left: 0;
     right: 0;
+    padding: 0 20px;
 
     .container {
       .row {
