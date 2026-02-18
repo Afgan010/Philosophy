@@ -300,12 +300,12 @@ body.home .header {
   position: relative;
   z-index: 2;
 }
+.main .hero .container .row .grid-container .hero-left-side .music .music_link {
+  display: inline-block;
+}
 .main .hero .container .row .grid-container .hero-left-side .music {
   display: inline-block;
   background-color: #01aef0;
-}
-.main .hero .container .row .grid-container .hero-left-side .music .music_link {
-  display: inline-block;
 }
 .main .hero .container .row .grid-container .hero-left-side .music a {
   color: #fff;
